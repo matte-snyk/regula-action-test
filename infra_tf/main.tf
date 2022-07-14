@@ -6,7 +6,7 @@ provider "aws" {
 resource "aws_iam_policy" "basically_allow_all" {
   name        = "some_policy"
   path        = "/"
-  description = "Some policy"
+  description = "Some policy_test"
 
   policy = <<EOF
 {
