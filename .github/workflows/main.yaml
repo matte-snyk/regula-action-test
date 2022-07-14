@@ -22,3 +22,4 @@ jobs:
         FUGUE_API_SECRET: ${{ secrets.FUGUE_API_SECRET }}
       with:
         sync: "true"
+        environment_id: "0d63362e-dbf6-434e-8e4a-93ebf1e8b934"
