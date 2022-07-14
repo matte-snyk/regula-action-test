@@ -1,0 +1,12 @@
+on: [push]
+
+jobs:
+  regula_tf_job:
+    runs-on: ubuntu-latest
+    name: Regula Terraform
+    steps:
+    - uses: actions/checkout@master
+    - uses: fugue/regula-action@v2.5.0
+      with:
+        input_path: infra_tf
+        rego_paths: example_custom_rule
